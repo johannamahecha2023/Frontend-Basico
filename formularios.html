@@ -20,12 +20,13 @@
         <input type="text" name="nombre" id="nombre" />
       </fieldset>
       <fieldset>
-        <label for="apellido">Nombre</label>
+        <label for="apellido">Apellido</label>
         <input type="text" name="apellido" id="apellido" />
       </fieldset>
       <fieldset>
-        <label for="pais">Nombre</label>
+        <label for="pais">Pais</label>
         <select name="pais" id="pais">
+          <option value="">Seleccione...</option>
           <option value="CO">Colombia</option>
           <option value="BR">Brazil</option>
           <option value="PR">Peru</option>
@@ -34,9 +35,27 @@
       </fieldset>
       <fieldset>
         <label for="genero">Genero</label>
-        <option value="M">Masculino</option>
-        <option value="F">Femenino</option>
-        <option value="O">Otro</option>
+        <select name="genero" id="genero">
+          <option value="M">Masculino</option>
+          <option value="F">Femenino</option>
+          <option value="O">Otro</option>
+        </select>
+      </fieldset>
+      <!-- el atributo size me mustra la cantidad de opciones que deseo que me muestre, en este caso quiero que me muestr todas las opciones que existen -->
+      <fieldset>
+        <label for="lugarestrabajo">Lugares de Trabajo Remoto</label>
+        <select name="lugarestrabajo" id="lugarestrabajo" size="7" multiple>
+          <!-- puedo seleccionar multiples selecciones con el atributo multiple y en el browser mantengo Control oprimido y selecciono con el click las opciones que necesito-->
+          <!-- para quitar alguna de las opciones sin que se quiten las demas que ya fueron seleccionadas, sin soltar Control, vuelvo a dar click sobre la opcion (en el browser) -->
+          <option value="IT">Italia</option>
+          <option value="JP">Japon</option>
+          <option value="ID">Indonesia</option>
+          <!-- cuando quiero que por defecto aparesca la informacion agrego el atributo selected -->
+          <option value="AUS" selected>Australia</option>
+          <option value="EU">Estados Unidos</option>
+          <option value="EC">Ecuador</option>
+          <option value="AR">Argentina</option>
+        </select>
       </fieldset>
     </form>
   </body>
