@@ -57,6 +57,17 @@
           <option value="AR">Argentina</option>
         </select>
       </fieldset>
+      <!-- componente que me permite agregar un area de texto mas amplio -->
+      <fieldset>
+        <label for="">Biografia</label>
+        <!-- el servidor pregunta por el name que escribio el usuario y el id es lo que le va a servir el javascript al lado cliente para poder tener acceso a la informacion -->
+        <textarea name="bio" id="bio" cols="30" rows="10"> </textarea>
+      </fieldset>
+
+      <!-- ejemplo name -->
+      <label for="name">name</label>
+      <input type="text" name="name" id="name" />
+      <button>enviar informacion al servidor</button>
     </form>
   </body>
 </html>
