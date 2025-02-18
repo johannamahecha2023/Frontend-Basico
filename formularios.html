@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularios</title>
-    <style>
-      fieldset {
-        border: 0;
-        outline: none;
-      }
-    </style>
   </head>
   <body>
     <h1>Formularios</h1>
@@ -62,6 +56,38 @@
         <label for="">Biografia</label>
         <!-- el servidor pregunta por el name que escribio el usuario y el id es lo que le va a servir el javascript al lado cliente para poder tener acceso a la informacion -->
         <textarea name="bio" id="bio" cols="30" rows="10"> </textarea>
+        <!-- el atributo tab index sirve para enumerar el orden en que se llena cada campo en caso que el usuario se desplace con la tecla tabulador -->
+      </fieldset>
+      <fieldset>
+        <legend>Informacion Basica</legend>
+        <label> primer nombre</label>
+        <input type="text" />
+        <label> segundo nombre</label>
+        <input type="text" />
+      </fieldset>
+      <fieldset>
+        <label>Password</label>
+        <input type="password" />
+        <input type="reset" />
+      </fieldset>
+      <fieldset>
+        <legend>Academic level</legend>
+        <input type="radio" id="primary" name="academic" value="P" /><label
+          for="primary"
+          >Primary</label
+        >
+        <input type="radio" id="highSchool" name="academic" value="A" /><label
+          for="highSchool"
+          >HighSchool</label
+        >
+        <input type="radio" id="master" name="academic" value="M" /><label
+          for="master"
+          >Master</label
+        >
+        <input type="radio" id="phD" name="academic" value="H" /><label
+          for="phD"
+          >PhD</label
+        >
       </fieldset>
 
       <!-- ejemplo name -->
