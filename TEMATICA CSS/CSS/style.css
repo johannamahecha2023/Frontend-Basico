@@ -1,3 +1,21 @@
 p{
     color: magenta;
 }
+
+.btn{
+
+    background-color:  #739D58;
+    color: aliceblue;
+    border: 1px solid #638095;
+    padding: 0px 20px;
+    margin: 50px;
+    /* usualmente el div no tiene limites en los lados y viene configurado por si solo como inline, por eso se uso span inline block para poder poner limite de ancho en los lados*/
+    display: inline block;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color:  aliceblue ;
+    color: #739D58;
+    border: 1px solid #638095;
+}
