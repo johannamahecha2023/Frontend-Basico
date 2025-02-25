@@ -32,5 +32,37 @@ ul li{
 
 h1 {
     /* la coma es por si no encuentra arial pongale Helvetica y si no la encuentra pongale alguno de laa fuentes serif */
-  font-family: Arial, Helvetica, serif;
+  /* font-family: Arial, Helvetica, serif; */
+  /* las letras monospace ocupan todas el mismo espacio  */
+  font-family: monospace; 
+}
+h1:nth-child(1){
+    font-weight: 300;
+}
+h1:nth-child(2){
+    font-weight: 400;
+}
+h1:nth-child(2){
+    font-weight: 700;
+}
+
+h3{
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h3 :nth-child(2){
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#principal{
+    font-size: 2rem ;
+}
+#secundario{
+    font-size: 1em;
 }
