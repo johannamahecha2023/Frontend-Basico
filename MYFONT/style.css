@@ -1,0 +1,36 @@
+div{
+    background: #cd7070;
+    color: #0d0d01;
+    margin: 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    border: 3px inset gray;
+    padding: 5px 20px;
+}
+p{ 
+/* justify para que quede alineado de lado a lado el texto */
+   text-align: justify;
+   /* letter spacing para que haya espacio entre cada letra, tambien le puedo dar valores negativos para que no hayan espacios*/
+   letter-spacing: -2px;
+   /* para espacios entre palabras en word-spacing */
+   word-spacing: 20px;
+   /* espacios entre renglones */
+   line-height: 40px
+}
+
+p span{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+/* lowercase para poner todo en minuscula - uppercase para poner todo en mayuscula - capitalize pone la primera letra de cada palabra y la pone en Mayuscula  */
+ul li{
+   text-transform: capitalize;
+}
+
+h1 {
+    /* la coma es por si no encuentra arial pongale Helvetica y si no la encuentra pongale alguno de laa fuentes serif */
+  font-family: Arial, Helvetica, serif;
+}
