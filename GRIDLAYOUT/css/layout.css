@@ -5,9 +5,12 @@
     height: 100vh;
     /* establece el layout de GRID -> LE DICE AL CONTENEDOR QUE SE VA A COMPORTAR COMO UNA CUADRICULA */
     display: grid;
+
+    /* espacio entre las areas */
+    gap:7px;
     /* establecemos filas y columnas del layout */
     grid-template: 50px auto 50px / 0.3fr 1fr;
-    background: #e389e3;
+    background: #000000;
     /* establece las areas otra manera de distribucion hacer el layout*/
     grid-template-areas: 
     "header header"
