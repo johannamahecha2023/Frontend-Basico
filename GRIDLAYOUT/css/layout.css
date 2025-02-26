@@ -1,0 +1,24 @@
+.contenedor {
+    /* vw quiere decir viewport whidth todo el ancho de la pagina */
+    width: 100vw;
+    /* viewport height */
+    height: 100vh;
+    /* establece el layout de GRID -> LE DICE AL CONTENEDOR QUE SE VA A COMPORTAR COMO UNA CUADRICULA */
+    display: grid;
+    /* establecemos filas y columnas del layout */
+    grid-template: 50px auto 50px / 0.3fr 1fr;
+    background: #e389e3;
+}
+.header {
+    background: #B6D7A9;
+}
+
+.menu {
+   background: #A3C4CA ;
+}
+.contenido{
+   background:#B5A7D6 ;
+}
+.footer{
+background: #FEE59B;
+}
