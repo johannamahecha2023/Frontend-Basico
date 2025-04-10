@@ -1,0 +1,30 @@
+.contenedor1 {
+    background: #ca6363;
+    display: flex;
+    flex-direction: row;
+
+}
+.contenedor2{
+    background: #4edeb3;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor3{
+    background: #b4e62b;
+    display: flex;
+    flex-direction: row;
+    /* items para alinear:*/
+    /* con flex-start alinamos al inicio de contenedor */
+    /* con flex-end alinamos al final de contenedor */
+    /* con flex-center alinamos al centro del contenedor */
+    justify-content: flex-end;
+}
+.contenedor4{
+    background: #b4e62b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* items para distribuir:*/
+
+}
