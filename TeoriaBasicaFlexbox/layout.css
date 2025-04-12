@@ -10,21 +10,57 @@
     flex-direction: column;
 }
 .contenedor3{
+    /* en este contenedor vamos a ver alineacion main axis */
     background: #b4e62b;
     display: flex;
     flex-direction: row;
-    /* items para alinear:*/
+    /* para alinear items:*/
     /* con flex-start alinamos al inicio de contenedor */
     /* con flex-end alinamos al final de contenedor */
     /* con flex-center alinamos al centro del contenedor */
-    justify-content: flex-end;
+    /* para distribuir items */
+    /* justify-content: space-between establece espacio entre los elementos */
+    /* justify-content: space-around, da espacio alrededor de los items dejando un poco menor el espacio del elemento que esta pegado al contenedor a diferencia de los elementos que no lo estan*/
+    /* justify-content:space-evenly, deja el mismo espacio alrededor de los items, tambien el espacio del contenedor al elemnto cerca  */
+    justify-content: space-evenly;
 }
 .contenedor4{
-    background: #b4e62b;
+    /* en este contenedor vamos a ver efecto cross axis(align-items) y tambien main axis (justify-content) */
+    background: #da69e2;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100px;
+}
+.contenedor5{
+    /* en este contenedor vamos a ver efecto cross axis(align-items) y tambien main axis (justify-content) */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    /* flex-nowrap viene por defecto y hace push con los elementos */
+    /* wrap es para que los elementos bajen y continuen en otra fila con su comportamiento sin invadir mas espacio*/
+    flex-wrap:wrap;
+    width: 100%;
+    height: 100px;
+    /* align-content alineacion entre las lineas, solo funciona para wrap, NO funciona cuando esta en flex-nowrap */
+    align-content: flex-start;
+}
+.contenedor5 .item{
+    width: 110px;
+    height: 70px;
+    background: #4edeb3;
+    border: 2px solid #ff0000;
+}
+.contenedor6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-    /* items para distribuir:*/
-
+.contenedor6 img{
+    margin-top: 100px;
+    width: 300px;
 }
